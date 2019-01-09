@@ -11,8 +11,18 @@
     "pico-8"
   ],
   "repository": "https://github.com/catnipped/pico8-syntax",
+  "main": "lib/main",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "configSchema": {
+    "darkMode": {
+      "title": "Dark mode",
+      "description": "Dark blue background",
+      "type": "boolean",
+      "default": "false",
+      "order": 1
+    }
   }
 }
