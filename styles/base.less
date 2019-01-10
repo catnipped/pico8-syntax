@@ -52,8 +52,8 @@ atom-text-editor {
 }
 
 .pico8-dark-mode {
-  .meta {
-    &.separator {
+  .syntax--meta {
+    &.syntax--separator {
       background-color: @syntax-background-color-dark-mode;
     }
   }
@@ -67,12 +67,12 @@ atom-text-editor {
   }
 }
 
-atom-text-editor .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border-bottom: 1px solid @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
