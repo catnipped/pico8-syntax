@@ -1,7 +1,7 @@
 {
   "name": "pico8-syntax",
   "theme": "syntax",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A simple syntax theme based on pico-8 by lexaloffle (http://www.lexaloffle.com/pico-8.php)",
   "keywords": [
     "syntax",
