@@ -51,6 +51,22 @@ atom-text-editor {
   }
 }
 
+.pico8-dark-mode {
+  .meta {
+    &.separator {
+      background-color: @syntax-background-color-dark-mode;
+    }
+  }
+
+  atom-text-editor {
+    background-color: @syntax-background-color-dark-mode;
+
+    .gutter {
+      background-color: @syntax-gutter-background-color-dark-mode;
+    }
+  }
+}
+
 atom-text-editor .search-results .marker .region {
   background-color: transparent;
   border-bottom: 1px solid @syntax-result-marker-color;
@@ -126,8 +142,7 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--string {
-  color: @p8-peach;
-
+  color: @p8-blue;
 
   &.syntax--regexp {
     color: @p8-peach;
@@ -144,17 +159,13 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .syntax--punctuation {
   &.syntax--definition {
-    &.syntax--comment {
-      color: @p8-light-gray;
-    }
-
-    &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
       color: @p8-light-gray;
     }
 
+    &.syntax--string,
     &.syntax--heading,
     &.syntax--identity {
       color: @p8-blue;

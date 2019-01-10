@@ -1,7 +1,7 @@
 {
   "name": "pico8-syntax",
   "theme": "syntax",
-  "version": "0.3.2",
+  "version": "0.3.7",
   "description": "A simple syntax theme based on pico-8 by lexaloffle (http://www.lexaloffle.com/pico-8.php)",
   "keywords": [
     "syntax",
@@ -10,9 +10,33 @@
     "pico8",
     "pico-8"
   ],
-  "repository": "https://github.com/catnipped/pico8-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catnipped/pico8-syntax.git"
+  },
+  "main": "lib/main",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  }
+  },
+  "configSchema": {
+    "darkMode": {
+      "title": "Dark mode",
+      "description": "Dark blue background",
+      "type": "boolean",
+      "default": "false",
+      "order": 1
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/catnipped/pico8-syntax/issues"
+  },
+  "homepage": "https://github.com/catnipped/pico8-syntax#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ossian borén"
 }
